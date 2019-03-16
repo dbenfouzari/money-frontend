@@ -5,7 +5,7 @@ interface ContentProps {
   children: JSX.Element | JSX.Element[] | string;
 }
 
-const StyledContent = styled.div`
+const StyledContent = styled.main`
   grid-area: content;
   overflow-y: auto;
 `;

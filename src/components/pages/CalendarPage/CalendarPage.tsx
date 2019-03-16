@@ -47,7 +47,7 @@ const CalendarPage = (): JSX.Element => {
         views={['day', 'month']}
       />
 
-      <ButtonFab onClick={onAddClick}>
+      <ButtonFab ariaLabel='Add an event' onClick={onAddClick}>
         <AddIcon />
       </ButtonFab>
 

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 interface ButtonFab {
   onClick?: () => void;
   children: JSX.Element | string;
+  ariaLabel?: string;
 }
 
 const StyledBtnFab = styled.button`
@@ -36,8 +37,14 @@ const StyledBtnFab = styled.button`
   }
 `;
 
-const ButtonFab = ({ onClick, children }: ButtonFab): JSX.Element => (
-  <StyledBtnFab onClick={onClick}>{children}</StyledBtnFab>
+const ButtonFab = ({
+  onClick,
+  children,
+  ariaLabel,
+}: ButtonFab): JSX.Element => (
+  <StyledBtnFab aria-label={ariaLabel} onClick={onClick}>
+    {children}
+  </StyledBtnFab>
 );
 
 export default ButtonFab;

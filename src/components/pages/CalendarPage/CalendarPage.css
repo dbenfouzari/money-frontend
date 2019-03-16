@@ -14,3 +14,7 @@
 .rbc-header {
   padding: 10px 0;
 }
+
+.rbc-off-range {
+  color: #484848;
+}
