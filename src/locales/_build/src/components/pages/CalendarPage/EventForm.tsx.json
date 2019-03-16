@@ -1,0 +1,10 @@
+{
+  "Create a transaction": {
+    "origin": [
+      [
+        "src/components/pages/CalendarPage/EventForm.tsx",
+        21
+      ]
+    ]
+  }
+}

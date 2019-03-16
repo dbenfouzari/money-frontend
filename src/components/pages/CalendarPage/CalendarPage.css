@@ -1,0 +1,16 @@
+.rbc-toolbar {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(120, 120, 120, 0.2);
+  margin-bottom: 0;
+  /* z-index: 2; */
+}
+
+.rbc-month-view,
+.rbc-time-view {
+  background-color: #fff;
+}
+
+.rbc-header {
+  padding: 10px 0;
+}

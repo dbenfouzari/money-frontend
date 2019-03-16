@@ -1,0 +1,74 @@
+{
+  "Every": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/WeeklyForm.tsx",
+        17
+      ]
+    ]
+  },
+  "days on:": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/WeeklyForm.tsx",
+        19
+      ]
+    ]
+  },
+  "Sun": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/WeeklyForm.tsx",
+        22
+      ]
+    ]
+  },
+  "Mon": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/WeeklyForm.tsx",
+        25
+      ]
+    ]
+  },
+  "Tue": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/WeeklyForm.tsx",
+        28
+      ]
+    ]
+  },
+  "Wed": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/WeeklyForm.tsx",
+        31
+      ]
+    ]
+  },
+  "Thu": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/WeeklyForm.tsx",
+        34
+      ]
+    ]
+  },
+  "Fri": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/WeeklyForm.tsx",
+        37
+      ]
+    ]
+  },
+  "Sat": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/WeeklyForm.tsx",
+        40
+      ]
+    ]
+  }
+}

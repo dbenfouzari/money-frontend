@@ -1,0 +1,30 @@
+.toasts__toast_wrapper {
+  position: fixed;
+  top: 110px;
+  width: 500px;
+  max-width: 500px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toasts__toast_item {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.toasts__toast_item + .toasts__toast_item {
+  margin-top: 10px;
+}
+
+.toasts__toast_item-info { background-color: var(--info-color); }
+.toasts__toast_item-warning { background-color: var(--warning-color); }
+.toasts__toast_item-error { background-color: var(--error-color); }
+.toasts__toast_item-success { background-color: var(--success-color); }

@@ -1,0 +1,18 @@
+{
+  "Every": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/DailyForm.tsx",
+        5
+      ]
+    ]
+  },
+  "days": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/DailyForm.tsx",
+        7
+      ]
+    ]
+  }
+}
