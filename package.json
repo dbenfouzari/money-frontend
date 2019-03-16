@@ -1,0 +1,121 @@
+{
+  "name": "react-typescript",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "PORT=8080 react-scripts start",
+    "start:docker": "docker-compose up --build web",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "lint:js": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "lint:js:changed": "git diff-index --name-only HEAD | grep -E \"(.*)\\.(js|jsx|ts|tsx)$\" | xargs eslint",
+    "lint:css-in-js": "stylelint src/**/*.{js,jsx,ts,tsx} --config .stylelint.styled.json",
+    "lint:css-files": "stylelint src/**/*.{css,sass} --config .stylelintrc",
+    "lint:css": "yarn lint:css-in-js && yarn lint:css-files",
+    "lint:css:changed": "git diff-index --name-only HEAD | grep -E \"(.*)\\.(js|jsx|ts|tsx)$\" | xargs -I % sh -c 'stylelint % --config .stylelint.styled.json;' && git diff-index --name-only HEAD | grep -E \"(.*)\\.(css|sass|scss)$\" | xargs -I % sh -c 'stylelint % --config .stylelintrc;'",
+    "lint": "yarn lint:js && yarn lint:css",
+    "lint:changed": "yarn lint:js:changed && yarn lint:css:changed",
+    "test:e2e": "cypress run",
+    "test:e2e:ci": "BROWSER=none start-test 8080 test:e2e",
+    "test:e2e:debug": "cypress open",
+    "test:js": "react-scripts test",
+    "test": "CI=true yarn test:js && yarn test:e2e:ci",
+    "coverage": "yarn test:js --coverage",
+    "ci-suite": "yarn lint && yarn test",
+    "prettier": "prettier --write src/**/*.{js,jsx,ts,tsx}",
+    "prettier:changed": "git diff-index --name-only HEAD | grep -E \"(.*)\\.(js|jsx|ts|tsx)$\" | xargs prettier",
+    "code-style": "yarn lint:js --fix & yarn prettier",
+    "code-style:changed": "git diff-index --name-only HEAD | grep -E \"(.*)\\.(js|jsx|ts|tsx)$\" | xargs -I % sh -c 'prettier --write %; eslint % --fix;'",
+    "release": "standard-version",
+    "i18n:add-locale": "lingui add-locale",
+    "i18n:extract": "lingui extract",
+    "i18n:compile": "lingui compile"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "NODE_ENV=production lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "stylelint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "node ./scripts/lint-ts-file.js"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!**/node_modules/**",
+      "!src/index.tsx",
+      "!src/serviceWorker.ts",
+      "!**/messages.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
+  "dependencies": {
+    "@lingui/react": "2.7.4",
+    "@types/jest": "24.0.11",
+    "@types/node": "11.11.3",
+    "@types/react": "16.8.8",
+    "@types/react-dom": "16.8.2",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-router-dom": "4.4.0",
+    "react-scripts": "2.1.8",
+    "styled-components": "4.1.3",
+    "typescript": "3.3.3333"
+  },
+  "devDependencies": {
+    "@babel/core": "7.3.4",
+    "@commitlint/cli": "7.5.2",
+    "@commitlint/config-conventional": "7.5.0",
+    "@lingui/cli": "2.7.4",
+    "@lingui/macro": "2.7.4",
+    "@types/enzyme": "3.9.0",
+    "@types/enzyme-adapter-react-16": "1.0.5",
+    "@types/jest-axe": "2.2.3",
+    "@types/lingui__macro": "2.7.2",
+    "@types/lingui__react": "2.5.2",
+    "@types/react-router-dom": "4.3.1",
+    "@types/styled-components": "4.1.12",
+    "@types/webpack-env": "1.13.9",
+    "@typescript-eslint/eslint-plugin": "1.4.2",
+    "@typescript-eslint/parser": "1.4.2",
+    "axe-core": "3.2.2",
+    "babel-core": "7.0.0-bridge.0",
+    "cypress": "3.2.0",
+    "cypress-axe": "0.4.0",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.11.2",
+    "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-compat": "3.0.1",
+    "eslint-plugin-deprecate": "0.5.4",
+    "eslint-plugin-filenames": "1.3.2",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-react": "7.12.4",
+    "husky": "1.3.1",
+    "jest-axe": "3.1.1",
+    "lint-staged": "8.1.5",
+    "prettier": "1.16.4",
+    "react-axe": "3.1.0",
+    "standard-version": "5.0.1",
+    "start-server-and-test": "1.7.12",
+    "stylelint": "9.10.1",
+    "stylelint-config-recommended": "2.1.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.5.2"
+  }
+}

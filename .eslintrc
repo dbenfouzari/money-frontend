@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "jsx-a11y",
+    "filenames",
+    "deprecate",
+    "import"
+  ],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:compat/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "@typescript-eslint/indent": ["error", 2],
+    "eol-last": ["error", "always"],
+    "semi": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "filenames/match-exported": 2,
+    "deprecate/member-expression": ["error",
+      { "name": "console.error", "use": "debug.error" },
+      { "name": "console.log", "use": "debug.log" }
+    ],
+    "import/order": ["error", { "newlines-between": "always" }]
+  }
+}

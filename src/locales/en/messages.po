@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2019-03-16 16:13+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/pages/NotFound.tsx:14
+msgid "404 - Not Found"
+msgstr "404 - Not Found"
+
+#: src/pages/NotFound.tsx:16
+msgid "<0>Come back to home page</0>"
+msgstr "<0>Come back to home page</0>"

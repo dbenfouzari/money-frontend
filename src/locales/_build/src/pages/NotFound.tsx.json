@@ -1,0 +1,18 @@
+{
+  "404 - Not Found": {
+    "origin": [
+      [
+        "src/pages/NotFound.tsx",
+        14
+      ]
+    ]
+  },
+  "<0>Come back to home page</0>": {
+    "origin": [
+      [
+        "src/pages/NotFound.tsx",
+        16
+      ]
+    ]
+  }
+}
