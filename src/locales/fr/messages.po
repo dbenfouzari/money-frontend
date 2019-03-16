@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-03-16 16:13+0100\n"
+"POT-Creation-Date: 2019-03-07 15:25+0100\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,10 +14,80 @@ msgstr ""
 "Plural-Forms: \n"
 "MIME-Version: 1.0\n"
 
-#: src/pages/NotFound.tsx:14
-msgid "404 - Not Found"
-msgstr "404 - Page non trouvée"
+#: src/components/pages/CalendarPage/EventForm.tsx:21
+msgid "Create a transaction"
+msgstr "Créer un mouvement"
 
-#: src/pages/NotFound.tsx:16
-msgid "<0>Come back to home page</0>"
-msgstr "<0>Retour à l’accueil</0>"
+#: src/components/organisms/RecurringSelect/RecurringSelect.tsx:65
+msgid "Daily"
+msgstr "Tous les X jours"
+
+#: src/components/organisms/RecurringSelect/DailyForm.tsx:5
+#: src/components/organisms/RecurringSelect/MonthlyByDayOfMonthForm.tsx:36
+#: src/components/organisms/RecurringSelect/WeeklyForm.tsx:17
+msgid "Every"
+msgstr "Tou(te)s les"
+
+#: src/components/organisms/RecurringSelect/WeeklyForm.tsx:37
+msgid "Fri"
+msgstr "Ven"
+
+#: src/components/organisms/RecurringSelect/MonthlyByDayOfMonthForm.tsx:142
+msgid "Last day"
+msgstr "Dernier jour"
+
+#: src/components/organisms/RecurringSelect/WeeklyForm.tsx:25
+msgid "Mon"
+msgstr "Lun"
+
+#: src/components/organisms/RecurringSelect/RecurringSelect.tsx:68
+msgid "Monthly (by day of month)"
+msgstr "Tous les mois (par jour du mois)"
+
+#: src/components/organisms/RecurringSelect/RecurringSelect.tsx:67
+msgid "Monthly (by day of week)"
+msgstr "Tous les mois (par jour de la semaine)"
+
+#: src/components/organisms/RecurringSelect/RecurringSelect.tsx:64
+msgid "No recurrence"
+msgstr "Pas de récurrence"
+
+#: src/components/organisms/RecurringSelect/WeeklyForm.tsx:40
+msgid "Sat"
+msgstr "Sam"
+
+#: src/components/organisms/RecurringSelect/WeeklyForm.tsx:22
+msgid "Sun"
+msgstr "Dim"
+
+#: src/components/organisms/RecurringSelect/WeeklyForm.tsx:34
+msgid "Thu"
+msgstr "Jeu"
+
+#: src/components/organisms/RecurringSelect/WeeklyForm.tsx:28
+msgid "Tue"
+msgstr "Mar"
+
+#: src/components/organisms/RecurringSelect/WeeklyForm.tsx:31
+msgid "Wed"
+msgstr "Mer"
+
+#: src/components/organisms/RecurringSelect/RecurringSelect.tsx:66
+msgid "Weekly"
+msgstr "Toutes les X semaines"
+
+#: src/components/organisms/RecurringSelect/RecurringSelect.tsx:69
+msgid "Yearly"
+msgstr "Tous les X ans"
+
+#: src/components/organisms/RecurringSelect/DailyForm.tsx:7
+msgid "days"
+msgstr "jours"
+
+#: src/components/organisms/RecurringSelect/WeeklyForm.tsx:19
+msgid "days on:"
+msgstr "jours le :"
+
+#: src/components/organisms/RecurringSelect/MonthlyByDayOfMonthForm.tsx:38
+msgid "months on:"
+msgstr "mois le :"

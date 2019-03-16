@@ -3,12 +3,7 @@
     "browser": true
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "jsx-a11y",
-    "filenames",
-    "deprecate",
-    "import"
-  ],
+  "plugins": ["jsx-a11y", "filenames", "deprecate", "import"],
   "extends": [
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
@@ -38,15 +33,21 @@
     }
   },
   "rules": {
-    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/indent": "off",
     "eol-last": ["error", "always"],
     "semi": ["error", "always"],
     "object-curly-spacing": ["error", "always"],
     "filenames/match-exported": 2,
-    "deprecate/member-expression": ["error",
+    "deprecate/member-expression": [
+      "error",
       { "name": "console.error", "use": "debug.error" },
       { "name": "console.log", "use": "debug.log" }
     ],
-    "import/order": ["error", { "newlines-between": "always" }]
+    "import/order": ["error", { "newlines-between": "always" }],
+    "camelcase": "off",
+    "@typescript-eslint/camelcase": ["error", { "properties": "never" }],
+    "arrow-body-style": ["error", "as-needed"],
+    "prefer-const": "error",
+    "default-case": "error"
   }
 }

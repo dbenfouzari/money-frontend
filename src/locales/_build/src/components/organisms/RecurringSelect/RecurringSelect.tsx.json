@@ -1,0 +1,50 @@
+{
+  "No recurrence": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/RecurringSelect.tsx",
+        64
+      ]
+    ]
+  },
+  "Daily": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/RecurringSelect.tsx",
+        65
+      ]
+    ]
+  },
+  "Weekly": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/RecurringSelect.tsx",
+        66
+      ]
+    ]
+  },
+  "Monthly (by day of week)": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/RecurringSelect.tsx",
+        67
+      ]
+    ]
+  },
+  "Monthly (by day of month)": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/RecurringSelect.tsx",
+        68
+      ]
+    ]
+  },
+  "Yearly": {
+    "origin": [
+      [
+        "src/components/organisms/RecurringSelect/RecurringSelect.tsx",
+        69
+      ]
+    ]
+  }
+}

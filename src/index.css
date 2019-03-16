@@ -6,6 +6,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #333;
+}
+
+:root {
+  --info-color: #00f;
+  --warning-color: #ff0;
+  --success-color: #0f0;
+  --error-color: #f00;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
