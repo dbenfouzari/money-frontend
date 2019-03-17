@@ -1,8 +1,9 @@
+import { IceCubeHash } from '../api';
+
 import {
   getIceCubeHashFromRecurrence,
   getIntervalFromInput,
   getRuleAndValidationObjectFromInput,
-  IceCubeHash,
   Recurrence,
   IceCubeHashOrNull,
   // getIceCubeRuleToForm,
