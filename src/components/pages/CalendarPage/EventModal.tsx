@@ -75,7 +75,7 @@ const EventModal = ({
     const data = addToast('<span>saving to api...</span>', 'info');
     const toastId = data.payload._id;
 
-    fetch('http://localhost:3005/transactions', {
+    fetch(`${process.env.REACT_APP_API_URL}/transactions`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',

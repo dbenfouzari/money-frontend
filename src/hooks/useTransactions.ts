@@ -18,7 +18,9 @@ function useTransactions(fetchAgain?: number | string) {
 
   useEffect(() => {
     fetch(
-      `http://localhost:3005/transactions?start_date=${date.toISOString()}`,
+      `${
+        process.env.REACT_APP_API_URL
+      }/transactions?start_date=${date.toISOString()}`,
       {
         headers: {
           'Content-Type': 'application/ld+json',
