@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+import config from '../config';
+
 export interface TransactionEvent {
   name: string;
   start_date: string;
@@ -18,9 +20,7 @@ function useTransactions(fetchAgain?: number | string) {
 
   useEffect(() => {
     fetch(
-      `${
-        process.env.REACT_APP_API_URL
-      }/transactions?start_date=${date.toISOString()}`,
+      `${config.apiBaseUrl}/transactions?start_date=${date.toISOString()}`,
       {
         headers: {
           'Content-Type': 'application/ld+json',

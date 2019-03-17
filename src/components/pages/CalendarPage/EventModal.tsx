@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import Modal from '../../organisms/Modal';
 import { addToast, updateToast } from '../../atoms/Toast/actions';
+import config from '../../../config';
 
 import EventForm from './EventForm';
 // import moment from 'moment';
@@ -75,7 +76,7 @@ const EventModal = ({
     const data = addToast('<span>saving to api...</span>', 'info');
     const toastId = data.payload._id;
 
-    fetch(`${process.env.REACT_APP_API_URL}/transactions`, {
+    fetch(`${config.apiBaseUrl}/transactions`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
