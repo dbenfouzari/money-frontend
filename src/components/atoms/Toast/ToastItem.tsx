@@ -51,7 +51,10 @@ const ToastItem = ({
   );
 };
 
-const mapDispatchToProps = (dispatch: Dispatch, ownProps: { item: Toast }) => ({
+const mapDispatchToProps = (
+  dispatch: Dispatch,
+  ownProps: { item: Toast },
+): GeneratedToastItemProps => ({
   onTimeout: () => dispatch(removeToast(ownProps.item._id)),
 });
 
