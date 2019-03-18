@@ -41,7 +41,7 @@ const EventForm = ({ value, onChange }: EventFormProps): JSX.Element => {
 
   return (
     <form style={{ padding: 20 }} id='event-form'>
-      <h3
+      <h2
         style={{
           display: 'flex',
           justifyContent: 'center',
@@ -49,7 +49,7 @@ const EventForm = ({ value, onChange }: EventFormProps): JSX.Element => {
         }}
       >
         <Trans>Create a transaction</Trans>
-      </h3>
+      </h2>
 
       <FormGroup>
         <Label>Nom</Label>
