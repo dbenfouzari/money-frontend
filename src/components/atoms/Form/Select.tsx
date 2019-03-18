@@ -50,32 +50,31 @@ const Select = <T extends string | number>({
   value,
   options,
   onChange,
-}: SelectProps<T>) => {
+}: SelectProps<T>): JSX.Element => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  // const handleChange = (event: React.ChangeEvent<HTMLSelectElement>): void => {
-  //   // TODO: Find a better way than `any` ?
-  //   onChange(event.target.value as any);
-  // };
-
-  const handleChange = (nextValue: T) => (): void => {
+  const handleChange = (nextValue: T): (() => void) => (): void => {
     onChange(nextValue);
     setIsOpen(false);
   };
+
+  const toggleOpen = (): void => setIsOpen(!isOpen);
 
   const shownValue = options.find(option => option.value === value);
 
   return (
     <StyledSelectWrapper>
-      <StyledSelect onClick={() => setIsOpen(!isOpen)}>
+      <StyledSelect data-testid='select__label' onClick={toggleOpen}>
         {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
         {shownValue!.label}
       </StyledSelect>
+
       {isOpen ? (
-        <StyledOptions>
+        <StyledOptions data-testid='select__option_list'>
           {options.map(option => (
             <StyledOption
               key={option.value}
+              data-testid={`select__option_item-${option.value}`}
               onClick={handleChange(option.value)}
             >
               {option.label}
