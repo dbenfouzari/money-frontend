@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import { Sidebar, Content, Topbar } from '../layouts';
+
 interface LayoutProps {
   children: JSX.Element | JSX.Element[] | string;
 }
@@ -18,7 +20,11 @@ const StyledLayout = styled.div`
 `;
 
 const DefaultLayout = ({ children }: LayoutProps): JSX.Element => (
-  <StyledLayout>{children}</StyledLayout>
+  <StyledLayout>
+    <Topbar />
+    <Sidebar />
+    <Content>{children}</Content>
+  </StyledLayout>
 );
 
 export default DefaultLayout;

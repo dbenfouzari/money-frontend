@@ -9,6 +9,7 @@ import { MdAdd as AddIcon } from 'react-icons/md';
 import ButtonFab from '../../atoms/ButtonFab';
 import { useTransactions } from '../../../hooks';
 import { TransactionEvent } from '../../../hooks/useTransactions';
+import { DefaultLayout } from '../../templates';
 
 import EventModal from './EventModal';
 
@@ -28,12 +29,12 @@ const CalendarPage = (): JSX.Element => {
     setIsModalOpen(false);
   };
 
-  const afterSubmit = () => {
+  const afterSubmit = (): void => {
     setManuallyFetch(manuallyFetch + 1);
   };
 
   return (
-    <>
+    <DefaultLayout>
       <Calendar
         localizer={localizer}
         events={events}
@@ -56,7 +57,7 @@ const CalendarPage = (): JSX.Element => {
         onClose={onModalClose}
         afterSubmit={afterSubmit}
       />
-    </>
+    </DefaultLayout>
   );
 };
 

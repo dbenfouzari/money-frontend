@@ -16,6 +16,7 @@ import 'moment/locale/fr';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { useTransactions } from '../../hooks';
 import { TransactionEvent } from '../../hooks/useTransactions';
+import { DefaultLayout } from '../templates';
 
 interface ChartData {
   date: number;
@@ -111,7 +112,7 @@ const ChartsPage = (): JSX.Element => {
   };
 
   return (
-    <>
+    <DefaultLayout>
       <ResponsiveContainer width='100%' height='100%'>
         <LineChart data={eventsToData(mergedEvents)}>
           <Line type='monotone' dataKey='amount' stroke='#8884d8' />
@@ -149,7 +150,7 @@ const ChartsPage = (): JSX.Element => {
           Next month
         </button>
       </div>
-    </>
+    </DefaultLayout>
   );
 };
 

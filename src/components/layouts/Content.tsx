@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface ContentProps {
-  children: JSX.Element | JSX.Element[];
+  children: JSX.Element | JSX.Element[] | string;
 }
 
 const ContentWrapper = styled.main`

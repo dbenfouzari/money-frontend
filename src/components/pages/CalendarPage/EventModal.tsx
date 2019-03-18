@@ -2,11 +2,10 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
-import Modal from '../../organisms/Modal';
+import { Modal } from '../../organisms';
 import { addToast, updateToast } from '../../atoms/Toast/actions';
 
 import EventForm from './EventForm';
-// import moment from 'moment';
 
 interface EventModel {
   name?: string;
