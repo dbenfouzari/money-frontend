@@ -17,7 +17,7 @@ const StyledFormGroup = styled.div`
     width: 300px;
     flex: 1;
   }
-  
+
   ${/* sc-selector */ StyledInput}, ${
   /* sc-selector */ StyledSelectWrapper
 }, .form-control {
@@ -29,13 +29,13 @@ const StyledFormGroup = styled.div`
   ${/* sc-selector */ StyledLabel} + .form-control {
     margin-left: 10px;
   }
-  
+
   & + & {
     margin-top: 10px;
   }
 `;
 
-const FormGroup = ({ children }: FormGroupProps) => (
+const FormGroup = ({ children }: FormGroupProps): JSX.Element => (
   <StyledFormGroup>{children}</StyledFormGroup>
 );
 
