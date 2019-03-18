@@ -15,7 +15,7 @@ COPY . /usr/src/app
 FROM build-deps AS build-app
 ENV NODE_ENV production
 WORKDIR /usr/src/app
-RUN yarn install --silent --production true
+RUN yarn install --silent --production false
 RUN yarn build
 
 ### STAGE 2: Production Environment ###
