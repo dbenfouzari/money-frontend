@@ -6,10 +6,14 @@ import { StyledInput } from './Input';
 import { StyledSelectWrapper } from './Select';
 
 interface FormGroupProps {
-  children: JSX.Element | JSX.Element[];
+  children:
+    | string
+    | JSX.Element
+    | JSX.Element[]
+    | (string | JSX.Element | JSX.Element[])[];
 }
 
-const StyledFormGroup = styled.div`
+const StyledFormGroup = styled.label`
   display: flex;
   align-items: center;
 
@@ -36,7 +40,14 @@ const StyledFormGroup = styled.div`
 `;
 
 const FormGroup = ({ children }: FormGroupProps): JSX.Element => (
-  <StyledFormGroup>{children}</StyledFormGroup>
+  <StyledFormGroup>
+    {React.Children.map(children, child => {
+      if (typeof child === 'string') {
+        return <StyledLabel as='span'>{child}</StyledLabel>;
+      }
+      return child;
+    })}
+  </StyledFormGroup>
 );
 
 export default FormGroup;

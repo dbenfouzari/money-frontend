@@ -2,15 +2,19 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 export interface LabelProps {
-  children: string;
+  children:
+    | string
+    | JSX.Element
+    | JSX.Element[]
+    | (string | JSX.Element | JSX.Element[])[];
 }
 
 export const StyledLabel = styled.label`
   color: inherit;
 `;
 
-const Label = ({ children }: LabelProps): JSX.Element => (
-  <StyledLabel>{children}</StyledLabel>
+const Label = ({ children, ...props }: LabelProps): JSX.Element => (
+  <StyledLabel {...props}>{children}</StyledLabel>
 );
 
 export default Label;
