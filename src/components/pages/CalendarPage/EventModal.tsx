@@ -42,6 +42,7 @@ const Action = styled.div`
   & + & {
     text-align: right;
     background-color: #295ef7;
+    color: #efefef;
   }
 `;
 

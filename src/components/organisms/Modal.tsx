@@ -80,7 +80,7 @@ const Modal = ({
     return;
   };
 
-  function listenEscapeKey(event: KeyboardEvent) {
+  function listenEscapeKey(event: KeyboardEvent): void {
     if (event.key === 'Escape' && isOpen) {
       onClose();
     }
@@ -101,11 +101,7 @@ const Modal = ({
         ? [
             <Backdrop key='modal-backdrop' />,
             <ModalWrapper key='modal-wrapper'>
-              <StyledModal
-                key='modal'
-                onClick={(e: MouseEvent) => e.stopPropagation()}
-                ref={ref}
-              >
+              <StyledModal key='modal' ref={ref}>
                 {children}
               </StyledModal>
             </ModalWrapper>,
