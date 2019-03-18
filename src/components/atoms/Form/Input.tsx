@@ -23,7 +23,7 @@ const Input = <T extends number | string | Date>({
   value,
   type,
   onChange,
-}: InputProps<T>) => {
+}: InputProps<T>): JSX.Element => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     onChange(event.target.value as any);
   };
@@ -37,9 +37,9 @@ const Input = <T extends number | string | Date>({
     case 'object':
       if (value === null) {
         formattedValue = '';
-        break;
+      } else if (value instanceof Date) {
+        formattedValue = value.getTime();
       }
-      if (value instanceof Date) formattedValue = value.getTime();
       break;
     case 'string':
       formattedValue = value;
