@@ -2,9 +2,6 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import posed, { PoseGroup } from 'react-pose';
-import { useEffect, useRef } from 'react';
-
-import useOnClickOutside from '../../hooks/useOnClickOutside';
 
 interface ModalProps {
   children: JSX.Element | JSX.Element[] | string;
@@ -61,7 +58,7 @@ const ModalWrapper = styled(AnimatedModalWrapper)`
   align-items: center;
 `;
 
-const StyledModal = styled(ModalAnimation)`
+export const StyledModal = styled(ModalAnimation)`
   max-width: 700px;
   background-color: #fff;
   border-radius: 4px;
@@ -74,37 +71,41 @@ const Modal = ({
   onClose,
   closeOnBackdropClick,
 }: ModalProps): JSX.Element | null => {
-  const ref = useRef();
   const onBackdropClick = (): void => {
     if (closeOnBackdropClick) onClose();
     return;
   };
 
-  function listenEscapeKey(event: KeyboardEvent) {
+  function listenEscapeKey(event: KeyboardEvent): void {
     if (event.key === 'Escape' && isOpen) {
       onClose();
     }
   }
 
-  useEffect(() => {
+  React.useEffect(() => {
     document.addEventListener('keydown', listenEscapeKey);
+
     return function cleanup() {
       document.removeEventListener('keydown', listenEscapeKey);
     };
   }, [isOpen]);
-
-  useOnClickOutside(ref, onBackdropClick);
 
   return ReactDOM.createPortal(
     <PoseGroup>
       {isOpen
         ? [
             <Backdrop key='modal-backdrop' />,
-            <ModalWrapper key='modal-wrapper'>
+            <ModalWrapper
+              key='modal-wrapper'
+              data-testid='modal__background'
+              onClick={onBackdropClick}
+            >
               <StyledModal
                 key='modal'
-                onClick={(e: MouseEvent) => e.stopPropagation()}
-                ref={ref}
+                data-testid='modal__modal'
+                onClick={(e: React.MouseEvent<HTMLDivElement>) =>
+                  e.stopPropagation()
+                }
               >
                 {children}
               </StyledModal>
