@@ -9,7 +9,7 @@ export const StyledLabel = styled.label`
   color: inherit;
 `;
 
-const Label = ({ children }: LabelProps) => (
+const Label = ({ children }: LabelProps): JSX.Element => (
   <StyledLabel>{children}</StyledLabel>
 );
 
