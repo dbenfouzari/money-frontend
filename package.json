@@ -54,7 +54,8 @@
       "!**/node_modules/**",
       "!src/index.tsx",
       "!src/serviceWorker.ts",
-      "!**/messages.js"
+      "!**/messages.js",
+      "!src/**/index.ts"
     ]
   },
   "eslintConfig": {
