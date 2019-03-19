@@ -5,6 +5,7 @@ export interface InputProps<T extends number | string | Date = string> {
   value: T | null;
   type?: T extends number ? 'number' : T extends Date ? 'date' : 'text';
   onChange: (nextValue: T) => void;
+  name?: string;
 }
 
 export const StyledInput = styled.input`
@@ -23,7 +24,8 @@ const Input = <T extends number | string | Date>({
   value,
   type,
   onChange,
-}: InputProps<T>) => {
+  name,
+}: InputProps<T>): JSX.Element => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     onChange(event.target.value as any);
   };
@@ -37,9 +39,9 @@ const Input = <T extends number | string | Date>({
     case 'object':
       if (value === null) {
         formattedValue = '';
-        break;
+      } else if (value instanceof Date) {
+        formattedValue = value.getTime();
       }
-      if (value instanceof Date) formattedValue = value.getTime();
       break;
     case 'string':
       formattedValue = value;
@@ -49,7 +51,12 @@ const Input = <T extends number | string | Date>({
   }
 
   return (
-    <StyledInput type={type} onChange={handleChange} value={formattedValue} />
+    <StyledInput
+      type={type}
+      name={name}
+      onChange={handleChange}
+      value={formattedValue}
+    />
   );
 };
 

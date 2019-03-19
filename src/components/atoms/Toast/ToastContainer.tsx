@@ -11,7 +11,7 @@ interface ToastContainerProps {
   toasts: Toast[];
 }
 
-const ToastContainer = ({ toasts }: ToastContainerProps) => (
+const ToastContainer = ({ toasts }: ToastContainerProps): JSX.Element => (
   <div className='toasts__toast_wrapper'>
     <PoseGroup animateOnMount={true} flipMove={false}>
       {toasts.map(toastItem => (
@@ -21,7 +21,7 @@ const ToastContainer = ({ toasts }: ToastContainerProps) => (
   </div>
 );
 
-const mapStateToProps = (state: any) => ({
+const mapStateToProps = (state: any): ToastContainerProps => ({
   toasts: getToasts(state),
 });
 

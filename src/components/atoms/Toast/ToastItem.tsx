@@ -26,7 +26,7 @@ const ToastItem = ({
   item,
   onTimeout,
   ...props
-}: GivenToastItemProps & GeneratedToastItemProps) => {
+}: GivenToastItemProps & GeneratedToastItemProps): JSX.Element => {
   React.useEffect(() => {
     /*
     Automatically clear the toast item but resets timer on item update
@@ -41,6 +41,7 @@ const ToastItem = ({
   return (
     <AnimatedToast
       {...props}
+      data-testid='toast__item'
       className={classnames(
         'toasts__toast_item',
         `toasts__toast_item-${item.type}`,
@@ -50,7 +51,10 @@ const ToastItem = ({
   );
 };
 
-const mapDispatchToProps = (dispatch: Dispatch, ownProps: { item: Toast }) => ({
+const mapDispatchToProps = (
+  dispatch: Dispatch,
+  ownProps: { item: Toast },
+): GeneratedToastItemProps => ({
   onTimeout: () => dispatch(removeToast(ownProps.item._id)),
 });
 
