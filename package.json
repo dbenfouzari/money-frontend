@@ -94,7 +94,7 @@
     "@lingui/macro": "2.7.4",
     "@types/classnames": "2.2.7",
     "@types/enzyme-adapter-react-16": "1.0.5",
-    "@types/enzyme": "3.9.0",
+    "@types/enzyme": "3.9.1",
     "@types/jest-axe": "2.2.3",
     "@types/lingui__macro": "2.7.2",
     "@types/lingui__react": "2.5.2",
