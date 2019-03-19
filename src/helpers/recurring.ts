@@ -1,5 +1,7 @@
 import moment, { Moment } from 'moment';
 
+import { IceCubeHash, RuleType } from '../api';
+
 import {
   /* iceCubeRuleToRecurrenceRule, */ recurrenceToIceCubeRule,
 } from './ice_cube';
@@ -11,27 +13,7 @@ export type ReadableRule =
   | 'monthly (by day of month)'
   | 'yearly';
 
-export type RuleType =
-  | 'IceCube::DailyRule'
-  | 'IceCube::WeeklyRule'
-  | 'IceCube::MonthlyRule'
-  | 'IceCube::YearlyRule';
-
 export type Validations = { [key: number]: number[] } | number[] | null; // FIXME: Better ?
-
-export interface IceCubeHash {
-  rule_type?: RuleType;
-  interval?: number;
-  validations?: {
-    [k in
-      | 'day'
-      | 'day_of_month'
-      | 'day_of_week'
-      | 'hour_of_day'
-      | 'minute_of_hour']?: {}
-  };
-  until?: string;
-}
 
 export type IceCubeHashOrNull = IceCubeHash | null;
 
