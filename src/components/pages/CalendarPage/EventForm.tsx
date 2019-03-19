@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Trans } from '@lingui/macro';
 
-import { FormGroup, Input, Label } from '../../atoms';
+import { FormGroup, Input } from '../../atoms';
 import RecurringSelect from '../../organisms/RecurringSelect';
 import { getIceCubeHashFromRecurrence } from '../../../helpers/recurring';
 
@@ -32,7 +32,7 @@ const EventForm = ({ value, onChange }: EventFormProps): JSX.Element => {
     });
   };
 
-  const onAmountChange = (nextValue: number) => {
+  const onAmountChange = (nextValue: number): void => {
     onChange({
       ...value,
       amount: nextValue * 100,
@@ -52,8 +52,9 @@ const EventForm = ({ value, onChange }: EventFormProps): JSX.Element => {
       </h2>
 
       <FormGroup>
-        <Label>Nom</Label>
+        Nom
         <Input<string>
+          name='recurrence name'
           type='text'
           value={value.name || ''}
           onChange={onInputChange('name')}
@@ -61,7 +62,7 @@ const EventForm = ({ value, onChange }: EventFormProps): JSX.Element => {
       </FormGroup>
 
       <FormGroup>
-        <Label>Montant</Label>
+        Montant
         <Input<number>
           type='number'
           value={(value.amount || 0) / 100}
@@ -70,7 +71,7 @@ const EventForm = ({ value, onChange }: EventFormProps): JSX.Element => {
       </FormGroup>
 
       <FormGroup>
-        <Label>Recurring</Label>
+        Recurring
         <Input<string>
           type='text'
           value={value.recurring || ''}
@@ -79,7 +80,7 @@ const EventForm = ({ value, onChange }: EventFormProps): JSX.Element => {
       </FormGroup>
 
       <FormGroup>
-        <Label>Récurrence</Label>
+        Récurrence
         <RecurringSelect
           value={value.recurring}
           onChange={(nextValue: any) =>
@@ -91,7 +92,7 @@ const EventForm = ({ value, onChange }: EventFormProps): JSX.Element => {
       </FormGroup>
 
       <FormGroup>
-        <Label>Date de début</Label>
+        Date de début
         <DatePicker
           selected={value.start_date}
           onChange={onInputChange('start_date')}

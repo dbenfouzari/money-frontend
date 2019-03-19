@@ -1314,10 +1314,18 @@
   dependencies:
     "@types/enzyme" "*"
 
-"@types/enzyme@*", "@types/enzyme@3.9.0":
+"@types/enzyme@*":
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-3.9.0.tgz#a81c91e2dfd2d70e67f013f2c0e5efed6df05489"
   integrity sha512-o0C7ooyBtj9NKyMzn2BWN53W4J21KPhO+/v+qqQX28Pcz0Z1B3DjL9bq2ZR4TN70PVw8O7gkhuFtC7VN3tausg==
+  dependencies:
+    "@types/cheerio" "*"
+    "@types/react" "*"
+
+"@types/enzyme@3.9.1":
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-3.9.1.tgz#3a0ce07e30066dbc26cd3474c8e680af2d249e26"
+  integrity sha512-CasnOP73BFE3/5JvGkod+oQtGOD1+CVWz9BV2iAqDFJ+sofL5gTiizSr8ZM3lpDY27ptC8yjAdrUCdv8diKKqw==
   dependencies:
     "@types/cheerio" "*"
     "@types/react" "*"
@@ -1341,7 +1349,7 @@
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.2.tgz#0e670ea254d559241b6eeb3894f8754991e73220"
   integrity sha512-ui3WwXmjTaY73fOQ3/m3nnajU/Orhi6cEu5rzX+BrAAJxa3eITXZ5ch9suPqtM03OWhAHhPSyBGCN4UKoxO20Q==
 
-"@types/hoist-non-react-statics@*":
+"@types/hoist-non-react-statics@^3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#a59c0c995cc885bef1b8ec2241b114f9b35b517b"
   integrity sha512-O2OGyW9wlO2bbDmZRH17MecArQfsIa1g//ve2IJk6BnmwEglFz5kdhP1BlgeqjVNH5IHIhsc83DWFo8StCe8+Q==
@@ -1459,12 +1467,12 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react-redux@7.0.4":
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-7.0.4.tgz#80f4059de0e0f29689aa828f9b0dd5e0a3dd8fa7"
-  integrity sha512-1UMlegvHhhhJkLf0em51fKQzQTSNwAPixI+kMSo2tgJxeqi86BY67bdAgRpST4kkndZ9ir5Bnu57vmocRgU6lw==
+"@types/react-redux@7.0.5":
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-7.0.5.tgz#4d284f8565cd9f7316086cce50e87f3d201d0880"
+  integrity sha512-O0WyoSbrMofJRxtSDe8qYhnmr2SSlTnshlQdnpgpD763L8BzlhXuEseksV7LSoCUwZ7vN4YqpQThl3jp02sceQ==
   dependencies:
-    "@types/hoist-non-react-statics" "*"
+    "@types/hoist-non-react-statics" "^3.3.0"
     "@types/react" "*"
     redux "^4.0.0"
 
