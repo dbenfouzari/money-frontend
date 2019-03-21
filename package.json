@@ -97,7 +97,7 @@
     "@types/enzyme": "3.9.0",
     "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/jest-axe": "2.2.3",
-    "@types/lingui__macro": "2.7.2",
+    "@types/lingui__macro": "2.7.3",
     "@types/lingui__react": "2.5.2",
     "@types/react-big-calendar": "0.20.10",
     "@types/react-datepicker": "2.2.0",
