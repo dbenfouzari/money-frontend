@@ -103,7 +103,7 @@
     "@types/react-datepicker": "2.2.0",
     "@types/react-redux": "7.0.6",
     "@types/react-router-dom": "4.3.1",
-    "@types/recharts": "1.1.14",
+    "@types/recharts": "1.1.16",
     "@types/redux-mock-store": "1.0.0",
     "@types/styled-components": "4.1.12",
     "@types/webpack-env": "1.13.9",
