@@ -1,0 +1,105 @@
+version: 2.1
+
+orbs:
+  codecov: codecov/codecov@1.0.4
+
+defaults: &defaults
+  docker:
+    - image: circleci/node:10.15
+      environment:
+        TERM: xterm
+
+jobs:
+  build-deps:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            # Find a cache corresponding to this specific package-lock.json checksum
+            # when this file is changed, this key will fail
+            - v2-yarn-packages-{{ checksum "yarn.lock" }}
+            # Find the most recently generated cache used from any branch
+            - v2-yarn-packages-
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: v2-yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+            - "./node_modules"
+
+  test:
+    <<: *defaults
+    docker:
+      - image: cypress/base:10
+        environment:
+          TERM: xterm
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            # Find a cache corresponding to this specific package-lock.json checksum
+            # when this file is changed, this key will fail
+            - v2-yarn-packages-{{ checksum "yarn.lock" }}
+            # Find the most recently generated cache used from any branch
+            - v2-yarn-packages-
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: v2-yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+            - "./node_modules"
+      - run:
+          name: Test global app
+          command: yarn test
+      - store_artifacts:
+          path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots
+
+  coverage:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            # Find a cache corresponding to this specific package-lock.json checksum
+            # when this file is changed, this key will fail
+            - v2-yarn-packages-{{ checksum "yarn.lock" }}
+            # Find the most recently generated cache used from any branch
+            - v2-yarn-packages-
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: v2-yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+            - "./node_modules"
+      - run:
+          name: Run coverage
+          command: CI=true yarn coverage
+      - codecov/upload:
+          file: coverage/*.json
+
+workflows:
+  version: 2
+  build-deps-and-test:
+    jobs:
+      - build-deps
+      - test:
+          requires:
+            - build-deps
+      - coverage:
+          requires:
+            - build-deps
