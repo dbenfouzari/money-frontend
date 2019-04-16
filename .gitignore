@@ -26,3 +26,5 @@ yarn-error.log*
 
 cypress/screenshots/**/*.png
 cypress/videos/*.mp4
+
+.docker-sync/
