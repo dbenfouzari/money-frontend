@@ -1,8 +1,0 @@
-{
-  "extends": ["config:base"],
-  "prNotPendingHours": 0,
-  "automerge": true,
-  "major": {
-    "automerge": false
-  }
-}
