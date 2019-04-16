@@ -6,7 +6,7 @@ ENV NODE_ENV development
 
 WORKDIR /usr/src/app
 
-COPY ["package.json", "yarn.lock", "./"]
+COPY ["package.json", "yarn.lock", "/usr/src/app/"]
 RUN yarn install --silent --production false
 
 COPY . /usr/src/app
