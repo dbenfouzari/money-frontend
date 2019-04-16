@@ -1,0 +1,8 @@
+version: '2'
+
+syncs:
+  money-frontend-sync:
+    src: '.'
+    sync_excludes:
+      ['node_modules', 'yarn.lock', 'package.json', '.gitignore', '.git']
+    sync_strategy: 'native_osx'
