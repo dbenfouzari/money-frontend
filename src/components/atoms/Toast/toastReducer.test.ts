@@ -1,8 +1,8 @@
 import toastReducer, { TOAST_ACTION_TYPES, ToastState } from './toastReducer';
 import { generateToastId } from './utils';
 
-describe('Toast reducer', function() {
-  it('should correctly add a toast', () => {
+describe('Toast reducer', function(): void {
+  it('should correctly add a toast', (): void => {
     const initialState: ToastState = {
       items: [{ _id: '123', content: 'test', type: 'info' }],
     };
@@ -22,7 +22,7 @@ describe('Toast reducer', function() {
     expect(result).toEqual(expectedResult);
   });
 
-  it('should correctly remove a toast', () => {
+  it('should correctly remove a toast', (): void => {
     const initialState: ToastState = {
       items: [
         { _id: '123', content: 'test', type: 'info' },
@@ -42,7 +42,7 @@ describe('Toast reducer', function() {
     expect(result).toEqual(expectedResult);
   });
 
-  it('should correctly update a toast', () => {
+  it('should correctly update a toast', (): void => {
     const initialState: ToastState = {
       items: [
         { _id: '123', content: 'test', type: 'info' },
@@ -68,7 +68,7 @@ describe('Toast reducer', function() {
     expect(result).toEqual(expectedResult);
   });
 
-  it('should add a toast if mine no more exists when trying to update it', () => {
+  it('should add a toast if mine no more exists when trying to update it', (): void => {
     const initialState: ToastState = {
       items: [
         { _id: '123', content: 'test', type: 'info' },
@@ -95,7 +95,7 @@ describe('Toast reducer', function() {
     expect(result).toEqual(expectedResult);
   });
 
-  it('should create a toast with correct type', () => {
+  it('should create a toast with correct type', (): void => {
     const initialState: ToastState = {
       items: [],
     };
@@ -118,7 +118,7 @@ describe('Toast reducer', function() {
     expect(result).toEqual(expectedResult);
   });
 
-  it('should create a toast with default type', () => {
+  it('should create a toast with default type', (): void => {
     const initialState: ToastState = {
       items: [],
     };
@@ -140,7 +140,7 @@ describe('Toast reducer', function() {
     expect(result).toEqual(expectedResult);
   });
 
-  it('should update a toast without touching type', () => {
+  it('should update a toast without touching type', (): void => {
     const initialState: ToastState = {
       items: [{ _id: '123', content: 'Coucou', type: 'warning' }],
     };
@@ -160,7 +160,7 @@ describe('Toast reducer', function() {
     expect(result).toEqual(expectedResult);
   });
 
-  it('should update a toast and changing type', () => {
+  it('should update a toast and changing type', (): void => {
     const initialState: ToastState = {
       items: [{ _id: '123', content: 'Coucou', type: 'warning' }],
     };

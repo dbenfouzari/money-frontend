@@ -1,8 +1,8 @@
 import { generateToastId } from './utils';
 
-describe('Toast utils', () => {
-  describe('generateToastId', () => {
-    it('should return a toastId', () => {
+describe('Toast utils', (): void => {
+  describe('generateToastId', (): void => {
+    it('should return a toastId', (): void => {
       const result = generateToastId();
 
       expect(result.length).toEqual(10);

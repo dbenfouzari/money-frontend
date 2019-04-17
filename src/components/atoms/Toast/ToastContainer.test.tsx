@@ -6,11 +6,11 @@ import { Provider } from 'react-redux';
 
 import ToastContainer from './ToastContainer';
 
-const middlewares: any[] = [];
+const middlewares: any[] = []; // eslint-disable-line @typescript-eslint/no-explicit-any
 const mockStore = configureStore(middlewares);
 
-describe('ToastContainer', () => {
-  it('should render without crash', () => {
+describe('ToastContainer', (): void => {
+  it('should render without crash', (): void => {
     const initialState = { '@@toast': { items: [] } };
     const store = mockStore(initialState);
 
@@ -23,7 +23,7 @@ describe('ToastContainer', () => {
     expect(wrapper).toHaveLength(1);
   });
 
-  it('should have a toast', () => {
+  it('should have a toast', (): void => {
     const initialState = {
       '@@toast': {
         items: [

@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  web:
+    volumes:
+      - money-frontend-sync:/usr/src/app:nocopy
+
+volumes:
+  money-frontend-sync:
+    external: true

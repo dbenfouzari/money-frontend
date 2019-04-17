@@ -12,8 +12,8 @@ const mockStore = configureMockStore();
 
 jest.useFakeTimers();
 
-describe('ToastItem', () => {
-  it('should render without crash', () => {
+describe('ToastItem', (): void => {
+  it('should render without crash', (): void => {
     const store = mockStore({
       '@@toast': { items: [{ _id: 'abc', content: 'A toast', type: 'info' }] },
     });
@@ -29,7 +29,7 @@ describe('ToastItem', () => {
     expect(wrapper).toHaveLength(1);
   });
 
-  it('should render without crash', () => {
+  it('should render without crash', (): void => {
     const store = mockStore({
       '@@toast': { items: [{ _id: 'abc', content: 'A toast', type: 'info' }] },
     });
@@ -51,7 +51,7 @@ describe('ToastItem', () => {
     ]);
   });
 
-  it('clear the timeout', () => {
+  it('clear the timeout', (): void => {
     const store = mockStore({
       '@@toast': { items: [{ _id: 'abc', content: 'A toast', type: 'info' }] },
     });
