@@ -14,8 +14,14 @@ jest.useFakeTimers();
 
 describe('ToastItem', () => {
   it('should render without crash', () => {
+    const store = mockStore({
+      '@@toast': { items: [{ _id: 'abc', content: 'A toast', type: 'info' }] },
+    });
+
     const wrapper = shallow(
-      <ToastItem item={{ _id: 'abc', content: 'A toast', type: 'info' }} />,
+      <Provider store={store}>
+        <ToastItem item={{ _id: 'abc', content: 'A toast', type: 'info' }} />
+      </Provider>,
     );
 
     jest.runAllTimers();
