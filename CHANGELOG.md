@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.2](https://github.com/dbenfouzari/money-frontend/compare/v2.0.0...v2.0.2) (2019-04-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v11.11.5 ([2258d47](https://github.com/dbenfouzari/money-frontend/commit/2258d47))
+* **deps:** update dependency @types/node to v11.13.4 ([7d9438a](https://github.com/dbenfouzari/money-frontend/commit/7d9438a))
+* **deps:** update dependency @types/react to v16.8.13 ([2211dfa](https://github.com/dbenfouzari/money-frontend/commit/2211dfa))
+* **deps:** update dependency @types/react-dom to v16.8.4 ([1b6bfeb](https://github.com/dbenfouzari/money-frontend/commit/1b6bfeb))
+* **deps:** update dependency react-datepicker to v2.4.0 ([8c22e04](https://github.com/dbenfouzari/money-frontend/commit/8c22e04))
+* **deps:** update dependency react-icons to v3.6.1 ([fccbc97](https://github.com/dbenfouzari/money-frontend/commit/fccbc97))
+* **deps:** update dependency react-redux to v7 ([268aea2](https://github.com/dbenfouzari/money-frontend/commit/268aea2))
+* **deps:** update dependency typescript to v3.4.3 ([cf3e4d1](https://github.com/dbenfouzari/money-frontend/commit/cf3e4d1))
+
+
+
 ## [2.0.1](https://github.com/dbenfouzari/money-frontend/compare/v2.0.0...v2.0.1) (2019-04-16)
 
 
