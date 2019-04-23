@@ -12482,10 +12482,10 @@ standard-version@5.0.2:
     stringify-package "^1.0.0"
     yargs "^12.0.2"
 
-start-server-and-test@1.7.13:
-  version "1.7.13"
-  resolved "https://registry.yarnpkg.com/start-server-and-test/-/start-server-and-test-1.7.13.tgz#fbf8d149b41ba8297773bca3660e455b67ce9849"
-  integrity sha512-vAnsQvLgzDN3kVo0mwD7tzbjWkZq9OmSvoDxwc6C1I0Ivq7chCqdcyssYcBg4wp6Q4DHHQiKZUytWggKuvoWvQ==
+start-server-and-test@1.7.14:
+  version "1.7.14"
+  resolved "https://registry.yarnpkg.com/start-server-and-test/-/start-server-and-test-1.7.14.tgz#585f7eee7b58c957318a9e3f7c32b4c55ac50f10"
+  integrity sha512-A+q1sh+uGInXlem47O4/AYKPxWq76qaGemjr9JDqzS7ceONul/0xH9wNklmSEhTfLK1IqZtAKD/T+bCGxV2qqw==
   dependencies:
     bluebird "3.5.4"
     check-more-types "2.24.0"
