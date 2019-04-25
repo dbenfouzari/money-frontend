@@ -25,14 +25,16 @@ interface ChartData {
 const eventsToData = (events: any[]): ChartData[] => {
   let initialAmount = 0;
 
-  return events.map((event: any) => {
-    initialAmount += event.amount;
+  return events.map(
+    (event: any): ChartData => {
+      initialAmount += event.amount;
 
-    return {
-      date: event.date,
-      amount: initialAmount,
-    };
-  });
+      return {
+        date: event.date,
+        amount: initialAmount,
+      };
+    },
+  );
 };
 
 const numberToDate = (time: number | string): string =>

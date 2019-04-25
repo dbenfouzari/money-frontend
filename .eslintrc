@@ -30,7 +30,8 @@
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
-    }
+    },
+    "polyfills": ["fetch", "URL", "navigator.serviceWorker", "Object.values"]
   },
   "rules": {
     "@typescript-eslint/indent": "off",
