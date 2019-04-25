@@ -27,16 +27,16 @@ const ToastItem = ({
   onTimeout,
   ...props
 }: GivenToastItemProps & GeneratedToastItemProps): JSX.Element => {
-  React.useEffect(() => {
+  React.useEffect((): (() => void) => {
     /*
     Automatically clear the toast item but resets timer on item update
      */
-    const handler = setTimeout(() => {
+    const handler = setTimeout((): void => {
       onTimeout();
     }, 3000);
 
-    return () => clearTimeout(handler);
-  }, [item]);
+    return (): void => clearTimeout(handler);
+  }, [item, onTimeout]);
 
   return (
     <AnimatedToast

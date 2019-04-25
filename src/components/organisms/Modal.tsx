@@ -76,19 +76,22 @@ const Modal = ({
     return;
   };
 
-  function listenEscapeKey(event: KeyboardEvent): void {
-    if (event.key === 'Escape' && isOpen) {
-      onClose();
-    }
-  }
+  const listenEscapeKey = React.useCallback(
+    (event: KeyboardEvent): void => {
+      if (event.key === 'Escape' && isOpen) {
+        onClose();
+      }
+    },
+    [isOpen, onClose],
+  );
 
-  React.useEffect(() => {
+  React.useEffect((): (() => void) => {
     document.addEventListener('keydown', listenEscapeKey);
 
-    return function cleanup() {
+    return function cleanup(): void {
       document.removeEventListener('keydown', listenEscapeKey);
     };
-  }, [isOpen]);
+  }, [isOpen, listenEscapeKey]);
 
   return ReactDOM.createPortal(
     <PoseGroup>
