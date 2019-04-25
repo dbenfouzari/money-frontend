@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.3](https://github.com/dbenfouzari/money-frontend/compare/v2.0.2...v2.0.3) (2019-04-25)
+
+
+### Bug Fixes
+
+* **deps:** regenerate yarn.lock to fix conflicts ([f20fc57](https://github.com/dbenfouzari/money-frontend/commit/f20fc57))
+* **deps:** update dependency @types/node to v11.13.7 ([dc20ea6](https://github.com/dbenfouzari/money-frontend/commit/dc20ea6))
+* **deps:** update dependency @types/react to v16.8.14 ([5da5386](https://github.com/dbenfouzari/money-frontend/commit/5da5386))
+* **deps:** update dependency react-scripts to v3 ([d498743](https://github.com/dbenfouzari/money-frontend/commit/d498743))
+* **deps:** update dependency typescript to v3.4.5 ([11cbf87](https://github.com/dbenfouzari/money-frontend/commit/11cbf87))
+
+
+
 ## [2.0.2](https://github.com/dbenfouzari/money-frontend/compare/v2.0.0...v2.0.2) (2019-04-17)
 
 
