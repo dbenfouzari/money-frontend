@@ -16,9 +16,12 @@ const renderApp = (): void => {
 };
 
 if (module.hot) {
-  module.hot.accept('./App', () => {
-    renderApp();
-  });
+  module.hot.accept(
+    './App',
+    (): void => {
+      renderApp();
+    },
+  );
 }
 
 renderApp();
