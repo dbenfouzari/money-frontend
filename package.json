@@ -97,7 +97,7 @@
     "typescript": "3.4.5"
   },
   "devDependencies": {
-    "@babel/core": "7.4.3",
+    "@babel/core": "7.4.4",
     "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.5.0",
     "@lingui/cli": "2.7.4",
