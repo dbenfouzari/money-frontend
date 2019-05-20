@@ -108,7 +108,7 @@
     "@types/jest-axe": "2.2.3",
     "@types/lingui__macro": "2.7.3",
     "@types/lingui__react": "2.5.2",
-    "@types/react-big-calendar": "0.20.15",
+    "@types/react-big-calendar": "0.20.16",
     "@types/react-datepicker": "2.3.0",
     "@types/react-redux": "7.0.9",
     "@types/react-router-dom": "4.3.3",
