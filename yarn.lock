@@ -1263,33 +1263,33 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
-"@lingui/babel-plugin-extract-messages@2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-extract-messages/-/babel-plugin-extract-messages-2.8.2.tgz#44eaeae7e05d6d809f60813626a3edc532cdccc7"
-  integrity sha512-irGHBm3DdFgHMaUWSRh5wPQclELt2JBsSy4IDPdWhOfTnSxO1jbymgzkPn2GRVRh3covtRyZ21QYwGLfxGv1XA==
+"@lingui/babel-plugin-extract-messages@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-extract-messages/-/babel-plugin-extract-messages-2.8.3.tgz#3fd6bcc97f7fec35b8b39731cd1d99596636a166"
+  integrity sha512-fvGMioLnUsgYzk3afpsYxv8Y8mYHZcYbN8MtEJQFgddO8vlYhZgAi3reWCHUzv4fWw2uGFyv36q6iC0SN9ywwQ==
   dependencies:
-    "@lingui/conf" "2.8.2"
+    "@lingui/conf" "2.8.3"
     babel-generator "^6.26.1"
 
-"@lingui/babel-plugin-transform-js@2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-transform-js/-/babel-plugin-transform-js-2.8.2.tgz#35a6673d696026aa21045caf72ac868888da1eb9"
-  integrity sha512-+OlARPrBCtuXY/AMMe/PCg3tUZm8X/cMNEGt7BEuFQZ10Ct/wTCSk8fZs/Z/966VI/Kss7PZavx9/EYEo77cgg==
+"@lingui/babel-plugin-transform-js@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-transform-js/-/babel-plugin-transform-js-2.8.3.tgz#f49b55daa597898c6b8d17ccb2df45f762229c97"
+  integrity sha512-oztOViWNGak8MbUJECg6IIvMrsCjXkEqETihYwHiN3SebtVYMjvYk50ChXmWdCr4z/b9sysj2fmuaCH37m5mrg==
 
-"@lingui/babel-plugin-transform-react@2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-transform-react/-/babel-plugin-transform-react-2.8.2.tgz#a868fa57cd0c50b5381dee934d19fa5562fdff94"
-  integrity sha512-j2wcy+mvsADDQn0UzUm2qXsnyRv40o4jI7BDsr+g3HPNV3r5/WEahouS+xzWjW6TRAlKgETMs8GdAViTmXueKA==
+"@lingui/babel-plugin-transform-react@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-transform-react/-/babel-plugin-transform-react-2.8.3.tgz#a80a16b56dce69f9496ca7f9a10f7b5a77de13c3"
+  integrity sha512-kozAtkaCEcCSFbiuZJzJd2febZTPaokUBuwPPKfehGp8v8MNPJK4kGarBNuKE8YOhkT6EpniZWk6Gk4HzjvfnA==
 
-"@lingui/cli@2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@lingui/cli/-/cli-2.8.2.tgz#c45bd1022ceb21fb0221ed2ac3bab72df416bbdd"
-  integrity sha512-9dr+EvGVPsIjEfqQuaagdGxqc9rwo58sdRH/FinOtdiLpr+94v5Ky9ZGsZaGMhEEm/jUdaW1Tp84EH8ETIICVQ==
+"@lingui/cli@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@lingui/cli/-/cli-2.8.3.tgz#7bd24a0e22854c8a5b22ab52e3bf382254607c4d"
+  integrity sha512-0QrTIjoRwjt0DdOg+ZQy8B7QA0E+3r710GsJtOayTVAgCZA/xfTrUInjwsTB6afnHBEbA3jx/4FV9URwuy6Kbw==
   dependencies:
-    "@lingui/babel-plugin-extract-messages" "2.8.2"
-    "@lingui/babel-plugin-transform-js" "2.8.2"
-    "@lingui/babel-plugin-transform-react" "2.8.2"
-    "@lingui/conf" "2.8.2"
+    "@lingui/babel-plugin-extract-messages" "2.8.3"
+    "@lingui/babel-plugin-transform-js" "2.8.3"
+    "@lingui/babel-plugin-transform-react" "2.8.3"
+    "@lingui/conf" "2.8.3"
     babel-generator "^6.26.1"
     babel-plugin-syntax-jsx "^6.18.0"
     babel-runtime "^6.26.0"
@@ -1313,10 +1313,10 @@
     ramda "^0.26.1"
     typescript "^2.9.2"
 
-"@lingui/conf@2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@lingui/conf/-/conf-2.8.2.tgz#4ab3af01cb3b3558ad1a731f8d81afc7f4146c90"
-  integrity sha512-Kap7Ke4z6QYoTeieoDcoRbL2elOU5yAVEIMq+g6yj+PLQrA5xRB4TdE5dbE74i8bTMd05xzJicktJ30DneLwsg==
+"@lingui/conf@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@lingui/conf/-/conf-2.8.3.tgz#3f33d752868797d8f794c13497e21192dd91f522"
+  integrity sha512-XGrInpIZ59xrjNefEeRXbFbwcdkfiqMrx0wa3wS6ZD8cTEW+YuKCBeDGo9/Fv/crhZ4GbmqcYyNFyikGaB+ZyQ==
   dependencies:
     chalk "^2.3.0"
     cosmiconfig "^5.2.1"
@@ -1324,29 +1324,28 @@
     jest-validate "^24.8.0"
     pkg-conf "^3.1.0"
 
-"@lingui/core@2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@lingui/core/-/core-2.8.2.tgz#4d49da8f5496c55182b2154e9b1a0feebbaf6d16"
-  integrity sha512-zNR/aoz6U6pqZ7SzPPEKZAsLYMqXgHI5OpX13PtpEQS57QPnvplu4MCg8b67dcn+bt5+1LqjW7W8ti+GAXLBeg==
+"@lingui/core@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@lingui/core/-/core-2.8.3.tgz#d9c0a30e7da981318320c9ab3c903f4cde04ac34"
+  integrity sha512-Y2Oh0IW7UKki3MADnMZkHN4+jl8ogR82uq8j4HVS1bixI+fwnZgR+A0D+0S6BuLh0quXRqOCfHIJxUA7dph9xw==
   dependencies:
     babel-runtime "^6.26.0"
     make-plural "^4.1.1"
     messageformat-parser "^2.0.0"
 
-"@lingui/macro@2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@lingui/macro/-/macro-2.8.2.tgz#8b08c1cc640087c33077871f20ece7b3bc5a7412"
-  integrity sha512-ZGLAmNU25F2BsLj3Lh62KXuNVpaoESzE8Mnwg4wBTlSonxXvnDrAxxH+fJI8u3GwzrpqJe2ou4XrhsFMMY8OYA==
+"@lingui/macro@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@lingui/macro/-/macro-2.8.3.tgz#2551381c8a3f75b1554327a07025ff6c5773b9a7"
+  integrity sha512-gs3GO+Lwf7r8dO0XwDX9vFuh+7x4/cUz+iaMb5aBYgVsgWc9UU0RAn27ll4kORcvVzY/rVHEPGSoDUJlPIbwlw==
   dependencies:
-    "@lingui/babel-plugin-transform-react" "2.8.2"
-    babel-plugin-macros "^2.5.1"
+    "@lingui/babel-plugin-transform-react" "2.8.3"
 
-"@lingui/react@2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-2.8.2.tgz#d65234df19222905bd4821956a9f1fee28b926ab"
-  integrity sha512-GhLUfOE6dLXiDrfEspsQVVDDmmMcaim3vDyzYmHax4XZoldtt+sdZTmCzhfa5xX5Srq4WGFG2lpsOevdfcmwyg==
+"@lingui/react@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-2.8.3.tgz#d83e3f7b11c8a9b3d697ce7481ca3d13c7dea80c"
+  integrity sha512-sW8Tm+LQKIYKy6IjdDg5/h7uxL2WGUVbp+FmigB63MmUR/i40gPG2IKRIg0ubcL9Hu9hZpqkSxT0aKigFBrsnQ==
   dependencies:
-    "@lingui/core" "2.8.2"
+    "@lingui/core" "2.8.3"
     babel-runtime "^6.26.0"
     hash-sum "^1.0.2"
     hoist-non-react-statics "3.3.0"
@@ -2649,7 +2648,7 @@ babel-plugin-jest-hoist@^24.6.0:
   dependencies:
     "@types/babel__traverse" "^7.0.6"
 
-babel-plugin-macros@2.5.1, babel-plugin-macros@^2.5.1:
+babel-plugin-macros@2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-2.5.1.tgz#4a119ac2c2e19b458c259b9accd7ee34fd57ec6f"
   integrity sha512-xN3KhAxPzsJ6OQTktCanNpIFnnMsCV+t8OloKxIL72D6+SUZYFn9qfklPgef5HyyDtzYZqqb+fs1S12+gQY82Q==
