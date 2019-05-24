@@ -1725,10 +1725,10 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@types/react-big-calendar@0.20.16":
-  version "0.20.16"
-  resolved "https://registry.yarnpkg.com/@types/react-big-calendar/-/react-big-calendar-0.20.16.tgz#023fb36427e4a5cf87c2252b42fb8bd4002f2fdc"
-  integrity sha512-1LM00MSDx5LaUKv4oXmscHvjyMjwTB/HiXNT7hBearQlvwL7W9wwl1rqOj1ad4+F/L4pheQP4PADSy2XY9SS+g==
+"@types/react-big-calendar@0.20.17":
+  version "0.20.17"
+  resolved "https://registry.yarnpkg.com/@types/react-big-calendar/-/react-big-calendar-0.20.17.tgz#9e73b44751a1e69bac39737585a08a4edc7c9aa6"
+  integrity sha512-a9nM1medHC3lYNMDRUArhbyuanQ5GTLtEa5mBI0XVGoyry0Dg0A9wlvpBD11KealGrnVRR29geKPqERtVwurCg==
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
