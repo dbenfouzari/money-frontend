@@ -1,5 +1,5 @@
 ### STAGE 1: Build dependencies ###
-FROM node:10.15-alpine AS build-deps
+FROM node:10.16-alpine AS build-deps
 
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 ENV NODE_ENV development
