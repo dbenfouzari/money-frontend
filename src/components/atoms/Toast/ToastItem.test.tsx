@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 // Create the mock store
 import configureMockStore from 'redux-mock-store';
-import { render } from 'react-testing-library';
+import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
 

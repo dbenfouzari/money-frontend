@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { render, fireEvent, getByTestId } from 'react-testing-library';
+import { render, fireEvent, getByTestId } from '@testing-library/react';
 
 const noop = (): null => null;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { fireEvent, render, cleanup } from 'react-testing-library';
+import { fireEvent, render, cleanup } from '@testing-library/react';
 
 import Modal from './Modal';
 
