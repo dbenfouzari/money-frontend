@@ -102,7 +102,7 @@
     "@commitlint/config-conventional": "7.6.0",
     "@lingui/cli": "2.8.3",
     "@lingui/macro": "2.8.3",
-    "@types/classnames": "2.2.8",
+    "@types/classnames": "2.2.9",
     "@types/enzyme": "3.10.1",
     "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/jest-axe": "2.2.3",
