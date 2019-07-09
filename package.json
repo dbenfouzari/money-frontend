@@ -103,7 +103,7 @@
     "@lingui/cli": "2.8.3",
     "@lingui/macro": "2.8.3",
     "@types/classnames": "2.2.9",
-    "@types/enzyme": "3.10.1",
+    "@types/enzyme": "3.10.2",
     "@types/enzyme-adapter-react-16": "1.0.5",
     "@types/jest-axe": "2.2.3",
     "@types/lingui__macro": "2.7.3",
