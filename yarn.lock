@@ -1965,10 +1965,10 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react-datepicker@2.9.1":
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/@types/react-datepicker/-/react-datepicker-2.9.1.tgz#ecac093c98c817d369f61f80df53530041afa219"
-  integrity sha512-15eMwW4I2VGBv9ALQKtDev0hsPhGpRV6O/OBA5KsSzNcD0uEMTZyGtkMvqHx6dWyD/fTEXbVlV40Sy8tb1wnQA==
+"@types/react-datepicker@2.9.2":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/@types/react-datepicker/-/react-datepicker-2.9.2.tgz#4399fc038dfecf098d95ee0a0b0247b687e79c6d"
+  integrity sha512-wmm1s+BOc1igfIXKU/fr2cKCxDsYnkAWTquRUn8nb1RaD42ywL63r+NUqqe1105mSXecyt6mtH1SopwLT0Yo+A==
   dependencies:
     "@types/react" "*"
     date-fns "^2.0.1"
