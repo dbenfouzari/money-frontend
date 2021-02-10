@@ -92,7 +92,7 @@
     "react-scripts": "3.3.0",
     "recharts": "1.8.5",
     "redux": "4.0.4",
-    "redux-starter-kit": "0.6.3",
+    "redux-starter-kit": "0.9.1",
     "styled-components": "4.4.1",
     "typescript": "3.7.3"
   },
